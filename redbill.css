@@ -1,0 +1,701 @@
+body {
+    font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header {
+    height: 80px;
+    align-items: center;
+    display: flex;
+    background-color: #FFFFFF;
+    position: fixed;
+    width: 100%;
+}
+
+.redbiller {
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    width: 75%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-title-text span {
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+
+.nav-title-text sup {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.signin-button {
+    padding: 10px;
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
+    width: 70px;
+    background-color: #FFFFFF;
+    border: 1px solid #EAEDF2;
+    border-right: #93120F;
+    cursor: pointer;
+}
+
+.signin-button a {
+    text-decoration: none;
+    color: #93120F;
+}
+
+.signin-button:hover {
+    background-color: black;
+    color: #FFFFFF;
+}
+
+.create-account-button {
+    padding: 10px;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    width: 130px;
+    
+    background-color: #93120F;
+    font-weight: 590;
+    border: 1px solid;
+    border: none;
+    cursor: pointer;
+}
+
+.create-account-button a {
+    color: #FFFEFE;
+    text-decoration: none;
+}
+
+.create-account-button:hover {
+    background-color: #500114;
+    color: #FFFFFF;
+}
+
+.nav-button {
+    display:inline-flex;
+}
+
+.nav-right {
+    display: flex;
+    gap: 90px;
+}
+
+.mobile-menu {
+    display: none;
+    align-items: center;
+}
+
+@media (max-width:900px) {
+    .mobile-menu {
+        display: block;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .nav-links a {
+        display: none;
+    }
+}
+
+
+.nav-links {
+    gap: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #2C3038;
+}
+
+
+ /* INTRODUCTION TO REDBILLER  */
+
+.intro-wrapper {
+    display: flex;
+    width: 100%;
+    margin: auto;
+}
+
+.intro-imagewrapper {
+    width: 50%;
+    margin: auto;
+}
+.intro-image {
+    /* width: 900px; */
+    height: 600px;
+    object-fit: cover;
+}
+
+.intro-textwrapper {
+    display: flex;
+    align-items: center;
+    background-color: #2C3038;
+    width: 50%;
+    height: 600px;
+}
+
+.intro-content {
+    width: 70%;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    color: #FFFFFF;
+}
+
+.intro-paragraph {
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.intro-button {
+    display: inline-flex;
+    margin-top: 30px;
+}
+
+.intro-signin-btn {
+    height: 49px;
+    width: 90px;
+    border: none;
+}
+
+.intro-create-btn {
+    border: none;
+    height: 50px;
+    width: 150px;
+}
+
+@media (max-width: 1005px) {
+    .intro-wrapper {
+        display: block;
+    }
+
+    .intro-imagewrapper {
+        width: 100%;
+    }
+
+    .intro-image {
+        width: 100%;
+    }
+
+    .intro-textwrapper {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .intro-imagewrapper {
+        display: none;
+    }
+}
+
+
+/* GREETINGS CONTAINER */
+
+.greeting-container {
+    /* height: 35vh; */
+    background-color: #F8F9FC;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.greeting-content {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+h3 {
+    font-size: 38px;
+}
+
+.greeting-paragraph{
+    font-size: 20px;
+    color: #555B64;
+    opacity: 80%;
+    line-height: 1.5;
+}
+
+
+/* AIRTIME PIN GENERATION CONTAINER*/
+
+.airtime-pinwrapper {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    line-height: 30px;
+    font-size: 18px;
+    color: #555B64;
+    padding-top: 60px;
+}
+
+.airtime-pin-content {
+    width: 50%;
+}
+
+.airtime-pin-icon {
+    width: 50%;
+}
+
+.airtime-pin-icon:hover {
+    opacity: 70%;
+}
+
+.airtime-pin-list {
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    line-height: 80px;
+    font-size: 15px;
+}
+
+.airtime-pin-list li {
+    list-style-type: none;
+}
+
+.fa-check {
+    border-radius: 50%;
+    background-color: #E9F5F0;
+    padding: 10px;
+    color: #93120F;
+}
+
+.phone-call {
+    height: 500px;
+}
+
+.learn-more-airtimepin {
+    padding-top: 60px;
+    color: #2C3038;
+}
+
+.fa-arrow-right {
+    font-size: 40px;
+    padding-left: 20px;
+    color: #93120F;
+}
+
+@media (max-width: 1200px) {
+    .airtime-pinwrapper {
+        display: block;
+    }
+
+    .airtime-pin-content {
+        width: 95%;
+        margin: auto;
+    }
+    
+    .airtime-pin-icon {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .airtime-pin-list {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+
+
+/* BETTING WALLET */
+
+.betting-wallet {
+    background-color: #F8F9FC;
+}
+
+.betting-container {
+    width: 73%;
+    margin: auto;
+    display: flex;
+    padding-top: 60px;
+}
+
+.company-name {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    width: 70%;
+}
+
+.fund-wallet {
+    width: 40%;
+    margin-left: 20px;
+}
+
+
+.naijabet {
+    height: 90px;
+}
+
+.nairabet {
+    height: 90px;
+}
+
+.bet9ja {
+    height: 95px;
+}
+
+.betlion {
+    height: 89px;
+}
+
+.cloudbet {
+    height: 90px;
+}
+
+.merrybet {
+    height: 100px;
+}
+
+
+.naijabet:hover,
+.nairabet:hover,
+.bet9ja:hover,
+.betlion:hover,
+.cloudbet:hover,
+.merrybet:hover,
+.nairamill:hover {
+    opacity: 70%;
+}
+
+.terms li {
+    list-style: none;
+    line-height: 70px;
+    color: #2C3038;
+}
+
+@media (max-width: 1000px) {
+    .betting-container {
+        display: block;
+    }
+
+    .company-name {
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    .fund-wallet {
+        width: 100%;
+    }
+}
+
+
+
+/* ARTICLES SECTION */
+
+.article-section {
+    width: 100%;
+}
+
+.article-wrapper {
+    width: 75%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.resolution {
+    width: 100%;
+}
+
+.resolution:hover {
+    opacity: 70%;
+}
+
+.two {
+    height: 254px;
+}
+
+.server {
+    height: 255px;
+}
+
+.cardwrapper {
+    width: 350px;
+    border: 1px solid #EAEDF2;
+    border-radius: 10px;
+    height: 604px;
+    box-shadow: .02em .02em .2em rgb(230, 230, 230);
+    transition-duration: .3s;
+}
+
+.cardwrapper:hover {
+    transform: translateY(-0.5em);
+    box-shadow: .2em .2em .1em rgb(230, 230 , 230);
+}
+
+.top-card {
+    width: 75%;
+    margin: auto;
+}
+
+.card-heading {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+.card-paragraph {
+    font-size: 16px;
+    color:#555B64;
+    line-height: 25px;
+}
+
+.card-hyperlink {
+    padding-bottom: 20px;
+}
+
+.read a {
+    font-size: 16px;
+    color:#93120F;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.bottom-card {
+    width: 100%;
+    padding: none;
+    border: 1px solid #EAEDF2;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+.bottom-card-content {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.blue {
+    background-color: #EBF5F7;
+    color:  #17A2B8;
+    cursor: pointer;
+    border: none;
+    padding: 6px 10px 6px 10px ;
+    font-weight:700 ;
+    font-size: 13px;
+    border-radius: 50px;
+}
+
+.red {
+    background-color: #FDEBED;
+    color: #DC3647;
+    border: none;
+    padding: 6px 10px 6px 10px ;
+    font-weight:700 ;
+    font-size: 13px;
+    border-radius: 50px;
+}
+
+.red:hover {
+    background-color: #BD2130;
+    color: #FFFFFF;
+}
+
+.blue:hover {
+    background-color: #117A8B;
+    color: #FFFFFF;
+}
+
+.date {
+    font-weight: 500;
+    color: #90949A;
+    font-size: 14px;
+}
+
+@media (max-width: 1370px) {
+    .article-wrapper {
+        grid-template-columns: repeat(2, 400px);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    .article-wrapper {
+        grid-template-columns: repeat(1, 400px);
+        gap:20px;
+    }
+}
+
+
+/* About us */
+
+.about-us {
+    width: 100%;
+    background-color: #192D35;
+}
+
+.about-us-container {
+    width: 75%;
+    margin: auto;
+}
+
+@media (max-width: 900px) {
+    .about-us-container {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+.know-more-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.website-email a {
+    text-decoration: none;
+    color: #90949A;
+}
+
+.website-email a:hover{
+    color: #FFFFFF;
+}
+
+.products h4,
+.company h4,
+.legal h4,
+.community h4{
+    color: #FFFFFF;
+}
+
+.products li,
+.company li,
+.legal li,
+.community li {
+    color: #90949A;
+    cursor: pointer;
+}
+
+
+.products li:hover,
+.company li:hover,
+.legal li:hover,
+.community li:hover {
+    color: #FFFFFF;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    line-height: 40px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+@media  (max-width:1080px) {
+    .footer {
+        display: block;
+        text-align: center;
+    }
+
+    .social-media {
+         justify-content: center;
+    }
+
+    .footer-top {
+        flex-wrap: nowrap;
+    }
+}
+
+@media (max-width:900px) {
+    .footer-top {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width:700px) {
+    .know-more-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+}
+
+.footer-title-text span {
+    font-size: 20px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.nav-title-text sup {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+.motto {
+    color: #FFFFFF;
+}
+
+.social-media {
+    color: #FFFFFF;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.bot {
+    border-radius: 70px;
+    padding: 10px 15px;
+    background-color: #93120F;
+    color: #FFFFFF;
+    font-size: 14px;
+    border: none;
+   
+}
+
+.sticky-btn {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
