@@ -69,7 +69,6 @@ nav {
     border-bottom-right-radius: 40px;
     border-top-right-radius: 40px;
     width: 130px;
-    
     background-color: #93120F;
     font-weight: 590;
     border: 1px solid;
@@ -151,7 +150,7 @@ nav {
     width: 55%;
     position: fixed;
     right: 20px;
-    background-color: rgb(136, 136, 136);
+    background-color: #e8ecf4;
     height: 0;
     color: white;
     overflow: hidden;
@@ -169,7 +168,7 @@ nav {
     font-size: 18px;
     line-height: 27px;
     text-align: left;
-    color: rgb(51, 49, 57);
+    color: rgb(191, 187, 202);
     font-weight: 100px;
     text-decoration: none;
 }
