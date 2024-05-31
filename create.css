@@ -114,6 +114,7 @@ body {
 .right-container {
     background-color: #FFFFFF;
     height: 100vh;
+    max-width:fit-content;
 }
 
 .footer-left {
@@ -137,6 +138,7 @@ body {
     width: 65%;
     margin: auto;
     padding-top: 120px;
+    max-width: fit-content;
 }
 
 h2 {
