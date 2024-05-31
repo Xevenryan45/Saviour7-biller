@@ -53,6 +53,7 @@ nav {
     cursor: pointer;
 }
 
+
 .signin-button a {
     text-decoration: none;
     color: #93120F;
@@ -95,13 +96,13 @@ nav {
     gap: 90px;
 }
 
-.mobile-menu {
+.dropdown {
     display: none;
     align-items: center;
 }
 
 @media (max-width:900px) {
-    .mobile-menu {
+    .dropdown {
         display: block;
     }
 
@@ -114,6 +115,10 @@ nav {
     }
 }
 
+.fa-bars {
+    color: black;
+    font-size: 20px;
+}
 
 .nav-links {
     gap: 50px;
@@ -126,6 +131,58 @@ nav {
     color: #2C3038;
 }
 
+.mobile-btn {
+    display: inline-flex;
+}
+
+.mobile-menu li a{
+    text-decoration: none;
+}
+
+.mobile-menu li {
+    list-style-type: none;
+}
+
+.drop {
+    color: #2C3038;
+}
+
+.mobile-menu{
+    width: 55%;
+    position: fixed;
+    right: 20px;
+    background-color: rgb(136, 136, 136);
+    height: 0;
+    color: white;
+    overflow: hidden;
+    transition: all 400ms ease;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    transition: all 0.4s ease-out;
+    transform: translateX(-10px);
+    flex-direction: column;
+}
+.mobile-menu>a{
+    font-size: 18px;
+    line-height: 27px;
+    text-align: left;
+    color: rgb(51, 49, 57);
+    font-weight: 100px;
+    text-decoration: none;
+}
+.mobile-menu>a:hover{
+    border-bottom: 2px solid #FF4C8E;
+    color: #FF4C8E;
+    transition: all 0.4s ease-out;
+    transform: translateX(-10px);
+
+}
+.open-menu{
+    height: 150px;
+}
 
  /* INTRODUCTION TO REDBILLER  */
 
