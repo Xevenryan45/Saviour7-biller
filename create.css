@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    max-width: 100%;
+    /* max-width: 100%; */
     /* position: relative; */
 }
 .create-account {
@@ -16,7 +16,6 @@ body {
     }
 
     .left-container {
-        /* width: 100%; */
         display: block;
         margin: auto;
         background-color:  #F3F6F9;
@@ -29,19 +28,31 @@ body {
         display: none;
     }
 
-    #dise {
-        max-width: 120%;
+
+    .right {
+        max-width: 105%;
+        /* margin: auto; */
     }
-
-
     .conditions h2 {
         font-size: 30px;
     }
 
+    .right-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .table-container {
+        max-width: 100%;
+       margin: auto;
+    }
+
+
 }
 
-@media (max-width: 500px) {
-}
+
 
 .left-container {
     background-color: #F3F6F9;
@@ -114,7 +125,6 @@ body {
 .right-container {
     background-color: #FFFFFF;
     height: 100vh;
-    max-width:fit-content;
 }
 
 .footer-left {
@@ -138,7 +148,6 @@ body {
     width: 65%;
     margin: auto;
     padding-top: 120px;
-    max-width: fit-content;
 }
 
 h2 {
@@ -167,7 +176,7 @@ h2 {
     border-collapse: collapse;
     border: 1px solid #BBBBC8;
     width: 630px;
-    margin: auto;
+    /* margin: auto; */
 }
 
 thead>tr>th {

@@ -3,7 +3,6 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 header {
@@ -112,6 +111,10 @@ nav {
 
     .nav-links a {
         display: none;
+    }
+
+    .nav {
+        gap: -190px;
     }
 }
 
@@ -249,14 +252,17 @@ h1 {
 
     .intro-imagewrapper {
         width: 100%;
+        margin: auto;
     }
 
     .intro-image {
         width: 100%;
+        margin: auto;
     }
 
     .intro-textwrapper {
         width: 100%;
+        margin: auto;
     }
 }
 
@@ -337,7 +343,10 @@ h3 {
 }
 
 .phone-call {
-    height: 500px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .learn-more-airtimepin {
@@ -357,7 +366,7 @@ h3 {
     }
 
     .airtime-pin-content {
-        width: 95%;
+        width: 85%;
         margin: auto;
     }
     
@@ -365,7 +374,7 @@ h3 {
         display: flex;
         justify-content: center;
         margin: auto;
-        align-items: center;
+        align-items: center;   
     }
 
 }
@@ -450,16 +459,19 @@ h3 {
 @media (max-width: 1000px) {
     .betting-container {
         display: block;
+        width: 100%;
+        /* margin: auto; */
     }
 
     .company-name {
         grid-template-columns: repeat(3, 1fr);
-        width: 100%;
-        margin-left: 10px;
+        width: 95%;
+        margin: auto;
     }
 
     .fund-wallet {
-        width: 100%;
+        width: 75%;
+        margin: auto;
     }
 }
 
@@ -469,6 +481,7 @@ h3 {
 
 .article-section {
     width: 100%;
+    margin: auto;
 }
 
 .article-wrapper {
@@ -603,7 +616,10 @@ h3 {
     .article-wrapper {
         grid-template-columns: repeat(1, 400px);
         gap:20px;
+        width: 100%;
+        margin: auto;
     }
+
 }
 
 
@@ -621,7 +637,7 @@ h3 {
 
 @media (max-width: 900px) {
     .about-us-container {
-        width: 90%;
+        width: 70%;
         margin: auto;
     }
 }
@@ -709,6 +725,9 @@ ul {
 @media (max-width:700px) {
     .know-more-container {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .sticky-btn {
+        display: none;
     }
 
 }
